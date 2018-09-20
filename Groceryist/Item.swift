@@ -17,7 +17,7 @@ class Item {
         date = NSDate()
         body = text
         category = ""
-        category = findCategory(itemName: text)
+        category = findCategory(itemName: text.lowercased())
     }
     
     init(body: String, category: String) {
